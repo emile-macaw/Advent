@@ -14,15 +14,14 @@ for line in data:
     print(justNumbers)
 
     firstNumber = justNumbers[0]
-    combinedNumber = firstNumber
-
+    
     lastNumber = justNumbers[len(justNumbers)-1]
-    combinedNumber = combinedNumber + lastNumber
+    combinedNumber = firstNumber + lastNumber
 
     print(combinedNumber)
     sum = sum + int(combinedNumber)
 
-    processedLines = processedLines + 1
+    processedLines += 1
 
 print(processedLines)
 print(sum)
