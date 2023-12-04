@@ -1,7 +1,8 @@
+import os
 import re
 
-data = open("c:/projects/demo/advent/day3/input.txt")
-
+dir = dir = os.path.dirname(__file__)
+data =   open(os.path.join(dir, "input.txt"))
 
 lines = []
 for ioLine in data:

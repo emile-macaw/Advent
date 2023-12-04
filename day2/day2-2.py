@@ -1,3 +1,5 @@
+import os
+
 def updateHighest(draw, highestList):
     colorStrings = draw.split(',')
     for colorString in colorStrings:
@@ -10,7 +12,8 @@ def updateHighest(draw, highestList):
                     highest[1] = amount
     return highestList
 
-data = open("c:/projects/demo/advent/day2/input.txt")
+dir = dir = os.path.dirname(__file__)
+data =   open(os.path.join(dir, "input.txt"))
 
 totalPower = 0
 

@@ -1,3 +1,5 @@
+import os
+
 def testDraw(draw, maxAmounts):
     colorStrings = draw.split(',')
     for colorString in colorStrings:
@@ -12,7 +14,9 @@ def testDraw(draw, maxAmounts):
 
 maxAmounts = [['red', 12], ['green', 13], ['blue', 14]]
 
-data = open("c:/projects/demo/advent/day2/input.txt")
+dir = dir = os.path.dirname(__file__)
+data =   open(os.path.join(dir, "input.txt"))
+
 validGameIdSum = 0
 
 for line in data:
